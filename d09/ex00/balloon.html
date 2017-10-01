@@ -1,0 +1,69 @@
+<html>
+	<head></head>
+	<style>
+		#balloon {
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			border-radius: 100px;
+		}
+	</style>
+	<body>
+		<div id="balloon" onclick="grow()" onmouseout="shrink()"></div>
+
+		<script type="text/javascript">
+
+			var balloon = document.getElementById('balloon');
+			var width = 200;
+			var height = 200;
+			var currentColor = 'red';
+			var u = 'px';
+
+			function grow() {
+				width += 10;
+				height += 10;
+				if (width > 420 || height > 420)
+				{
+					width = 200;
+					height = 200;
+				}
+				if (currentColor == 'red')
+					currentColor = 'green';
+				else if (currentColor == 'green')
+					currentColor = 'blue';
+				else if (currentColor == 'blue')
+					currentColor = 'red';
+
+				balloon.style.backgroundColor = currentColor;
+				balloon.style.width = width + u;
+				balloon.style.height = height + u;
+				balloon.style.borderRadius = width / 2 + u;
+			}
+
+			function shrink()
+			{
+				width -= 5;
+				height -= 5;
+				if (width < 200 || height < 200)
+				{
+					width = 200;
+					height = 200;
+				}
+				if (currentColor == 'blue')
+					currentColor = 'green';
+				else if (currentColor == 'green')
+					currentColor = 'red';
+				else if (currentColor == 'red')
+					currentColor = 'blue';
+
+				balloon.style.backgroundColor = currentColor;
+				balloon.style.width = width + u;
+				balloon.style.height = height + u;
+				balloon.style.borderRadius = width / 2;
+			}
+
+		</script>
+
+	</body>
+</html>
+

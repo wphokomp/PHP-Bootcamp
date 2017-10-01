@@ -1,0 +1,454 @@
+/*-------------------------------------------------------General----------------------------------------------------->*/
+body {
+    background: #e5e5e5;
+    padding:0;
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    text-decoration:none;
+}
+.row
+{
+    width:1200px;
+    margin: 0 auto;
+}
+.row .row
+{
+    padding:0px;
+    width:100%;
+}
+.col-12
+{
+    width:94%;
+    margin: 15px 3%;
+    float:left;
+}
+.col-9
+{
+    width:69%;
+    margin: 15px 3%;
+    float:left;
+}
+.col-8
+{
+    width:60%;
+    margin: 15px 3%;
+    float:left;
+}
+.col-6
+{
+    width:44%;
+    margin: 15px 3%;
+    float:left;
+}
+.col-4
+{
+    width:27%;
+    margin: 15px 3%;
+    float:left;
+}
+.col-3
+{
+    width:19%;
+    margin: 15px 3%;
+    float:left;
+}
+.col-2
+{
+    width:10%;
+    margin: 15px 3%;
+    float:left;
+}
+.btn-white-outl {
+    -webkit-transition: all 0.2s ease  !important;
+    transition: all 0.2s ease !important;
+    border: 2px solid #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    width:150px;
+    margin:30px auto;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+
+}
+.btn-white-outl:hover {
+    -webkit-transition: all 0.2s ease  !important;
+    transition: all 0.2s ease !important;
+    border: 2px solid #dab057;
+    background-color: #dab057;
+
+}
+.button {
+    -webkit-transition: all 0.2s ease  !important;
+    transition: all 0.2s ease !important;
+    background:#dab057;
+    padding:10px;
+    box-sizing: border-box;
+    color:#fff;
+    width:100%;
+    text-align:center;
+    cursor: pointer;
+}
+.button:hover {
+    -webkit-transition: all 0.2s ease  !important;
+    transition: all 0.2s ease !important;
+    background-color: #c08d3c;
+}
+.top-section
+{
+    width:100%;
+    margin-top:90px;
+    padding-top:10px
+}
+#container {
+    min-height:600px;
+}
+.float-right {
+    float:right;
+}
+/*----------------------------------------------------Products------------------------------------------------------->*/
+.product-container
+{
+    width:100%;
+    background:#fff;
+    padding:20px;
+    box-sizing: border-box;
+}
+.product-image {
+    width:100%;
+}
+.product-image img {
+    width:100%;
+}
+
+/*--------------------------------------------------------Text------------------------------------------------------->*/
+a {
+    color:inherit;
+}
+h1, h2, h3, h4,h5 h6 {
+    font-family: 'Oswald', sans-serif;
+}
+#home-mural h2
+{
+    font-size:50px;
+    padding:0;
+    margin:0;
+}
+h3
+{
+    font-size:30px ;
+    padding:0;
+    margin:0;
+}
+h6
+{
+    font-size:18px;
+    padding:10px 0px;
+    margin:0;
+}
+#home-mural h5
+{
+    font-weight:200;
+    font-size:25px;
+    margin:0px;
+}
+#home-menu li {
+    font-family: 'Quicksand', sans-serif;
+}
+.centered-text {
+    text-align: center;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+footer a:hover
+{
+    color:#dab057;
+}
+/*-----------------------------------------------------Navigation---------------------------------------------------->*/
+#page-nav {
+    z-index: 999;
+    background:#fff;
+    width:100%;
+    min-height:80px;
+    box-sizing:border-box;
+    position:fixed;
+    top:0;
+    left:0;
+    padding:10px;
+    -moz-box-shadow:    1px 1px 3px 3px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.3);
+    box-shadow:         1px 1px 3px 3px rgba(0, 0, 0, 0.3);
+}
+#home-logo
+{
+    float:left;
+}
+#home-logo img
+{
+    width:150px;
+}
+.featured-button{
+    -webkit-transition: background-color 0.2s ease  !important;
+    transition: background-color 0.2s ease !important;
+    background-color: #dab057;
+    color:#fff;
+}
+.featured-button:hover {
+    -webkit-transition: background-color 0.2s ease !important;
+    transition: background-color 0.2s ease !important;
+    color: #fff!important;
+    background-color: #c08d3c;
+}
+#home-menu{
+    float:right;
+}
+#home-menu li
+{
+    cursor: pointer;
+    list-style: none;
+    display:inline-block;
+    padding:10px;
+    box-sizing: border-box;
+    -webkit-transition: color .2s;
+    transition: color 1s;
+}
+#home-menu li:hover
+{
+    color: #dab057;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+
+/*-------------------------------------------------------login------------------------------------------------------->*/
+#login-mural {
+    width:100%;
+    height:800px;
+    margin-top:80px;
+    background: url("https://s17.postimg.org/qzw749s8v/login_bg.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color:#fff;
+}
+
+#signup-mural {
+    width:100%;
+    height:800px;
+    margin-top:80px;
+    background: url("https://s17.postimg.org/9nvuityrj/signup_bg.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color:#fff;
+}
+
+#login-container,
+#signup-container
+{
+    padding:20vh 0;
+    width:100%;
+}
+#login-form,
+#signup-form
+{
+    margin:0 auto;
+    width:400px;
+    padding:40px;
+    box-sizing: border-box;
+    background: #ffffff;
+    color:#000;
+}
+#login-form input,
+#signup-form input
+{
+    padding:10px;
+    font-size:18px;
+    font-weight:100;
+    box-sizing: border-box;
+    width:100%;
+    margin:10px 0;
+}
+#login-submit,
+#signup-submit
+{
+    border: none;
+}
+/*---------------------------------------------------------CART------------------------------------------------------>*/
+.cart-product-container{
+    background:#fff;
+    position:relative;
+    margin-bottom:30px;
+}
+.cart-product-image {
+    width:25%;
+    float:left;
+}
+.cart-product-image img {
+    width:100%;
+}
+.cart-product-name{
+    width:50%;
+    padding-left:15px;
+    float:left;
+}
+.cart-product-name h5
+{
+    font-size:20px;
+    margin:50px 0 0px 0;
+}
+.cart-product-price{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    background:#000;
+    padding:10px;
+    color:#fff;
+}
+.cart-product-description {
+    width:50%;
+    padding-left:15px;
+    float:left;
+}
+.cart-remove {
+    position:absolute;
+    top:20px;
+    right:20px;
+    background: #dab057;
+    color:#fff;
+    padding: 8px 10px;
+}
+#cart-checkout {
+    padding:20px;
+    box-sizing: border-box;
+    width:100%;
+    min-height:340px;
+    background:#fff;
+}
+#cart-checkout h4 {
+    font-size:20px;
+}
+.cart-empty
+{
+    width:100%;
+    min-height:350px;
+    background:#fff;
+    padding-top:150px;
+    box-sizing: border-box;
+    text-align:center;
+}
+/*--------------------------------------------------------Store------------------------------------------------------>*/
+#sort {
+    width:100%;
+    padding:15px;
+    box-sizing: border-box;
+    background:#000;
+    color:#fff;
+    text-align:center;
+    cursor: pointer;
+    position:relative;
+}
+#sort:hover > #sort-list
+{
+    display:block;
+}
+#sort i
+{
+    margin-left:60px
+}
+#sort-list
+{
+    list-style: none;
+    padding:0;
+    margin:0;
+    text-align:left;
+    position:absolute;
+    top:50px;
+    right:0;
+    background:#000;
+    width:100%;
+    display:none;
+}
+#sort-list li {
+    padding: 10px;
+    box-sizing: border-box;
+    width:100%;
+    background: #000;
+    -webkit-transition: all 0.2s ease  !important;
+    transition: all 0.2s ease !important;
+}
+#sort-list li:hover {
+    color: #dab057;
+    padding: 10px;
+    width:100%;
+    background: #191919;
+    -webkit-transition: all 0.2s ease  !important;
+    transition: all 0.2s ease !important;
+}
+/*--------------------------------------------------------Home------------------------------------------------------->*/
+#home-mural
+{
+    width:100%;
+    height:800px;
+    margin-top:80px;
+    background: url("https://s17.postimg.org/w8mmoela7/cardinal_home.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color:#fff;
+}
+#home-mural .center-vertical {
+    height: 100px;
+    padding:300px;
+}
+/*-------------------------------------------------------Footer------------------------------------------------------>*/
+footer
+{
+    width:100%;
+    min-height:100px;
+    background:#000;
+    padding:40px 0px;
+    color:#fff
+}
+footer p
+{
+    font-size:12px;
+}
+footer ul
+{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+footer ul li
+{
+    font-size:14px;
+}
+#footer-contact input,
+#footer-contact textarea
+{
+    width:100%;
+    float:left;
+    margin:10px 0;
+    background: none;
+    border: 2px solid #fff;
+    padding:10px;
+    box-sizing:border-box;
+}
+#footer-contact-submit
+{
+    width: 150px !important;
+    color: #fff;
+}

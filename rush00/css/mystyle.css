@@ -1,0 +1,231 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background-image:  url('../images/1.jpg');
+    background-repeat:no-repeat;
+}
+
+h1
+{
+	font-weight: 300;
+	position: center;
+}
+h1 span
+{
+	letter-spacing: 4px;
+	color: white; 
+}
+h6 {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+p 
+{ 
+   	line-height: 200px;
+    margin: auto;
+    margin-top: 10%;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    font-size: 30px;
+}
+p span 
+{ 
+  letter-spacing: 2px;
+	color: black; 
+}
+input
+{
+
+}
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: right;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+.caption {
+    font-size: 20px;
+    color: white;
+
+    margin-top: 15%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 15;
+
+}
+
+.btn {
+
+    padding: 15px 30px;
+    font-size: 14px;
+    border-radius: 0;
+    color: #0d0d0d;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    outline:none;
+    margin-top: 7px;
+}
+.btn:hover
+{
+	 background: black;
+    border: 3px solid white;
+    padding: 15px 30px;
+    font-size: 14px;
+    border-radius: 0;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;	
+}
+.btn-transparent {
+    background: transparent;
+    border: 3px solid #fff;
+    padding: 15px 30px;
+    font-size: 14px;
+    border-radius: 0;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.btn-transparent:hover {
+    background: #fff;
+    border: 3px solid #fff;
+    padding: 15px 30px;
+    font-size: 14px;
+    border-radius: 0;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.btn-light {
+    background: #fff;
+    border: 3px solid #fff;
+    padding: 15px 30px;
+    font-size: 14px;
+    border-radius: 0;
+    color: #0d0d0d;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.btn-light:hover {
+    background: transparent;
+    border: 3px solid #fff;
+    padding: 15px 30px;
+    font-size: 14px;
+    border-radius: 0;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+/*pop up box*/
+
+.box {
+  width: 20%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  background-clip: padding-box;
+  text-align: center;
+}
+.overlay1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 200ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay1:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  width: 15%;
+  position: relative;
+}
+.popop input
+{
+	width: 10px;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: grey;
+}
+.popup .content {
+  max-height: 35%;
+  overflow: auto;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 200ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay2:target {
+  visibility: visible;
+  opacity: 1;
+}
+.sign-button-cont
+{
+  margin-top: 10px;
+}

@@ -1,0 +1,42 @@
+<- Vertex ---------------------------------------------------
+The vertex class handles vertexes.
+
+An instance can be constructed from 'x', 'y', 'z' values:
+new Vertex( array('x' => 0.0, 'y' => 0.0, 'z' => 0.0 ) );
+
+An optional 'w' and 'color' value can be added to the constuctor:
+new Vertex( array( 'x' => 0.0, 'y' => 0.0, 'z' => 0.0, 'w' => 0.0, 'color' => new Color( 255 << 8  ) ) );
+
+The class provides the following methods:
+
+getX();
+Returns the x constitutive.
+
+setX( $x );
+Sets the x constitutive.
+
+getY();
+Returns the y constitutive.
+
+setY( $y );
+Sets the y constitutive.
+
+getZ();
+Returns the z constitutive.
+
+setZ( $z );
+Sets the z constitutive.
+
+getW();
+Returns the w constitutive.
+
+setW( $w );
+Sets the w constitutive.
+
+getColor();
+Returns the color constitutive.
+
+setColor( $color );
+Sets the color constitutive.
+
+------------------------------------------------------------- Vertex ->

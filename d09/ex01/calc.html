@@ -1,0 +1,65 @@
+<html>
+	<body>
+		<input id="left" type="number"/>
+		<select id="sel">
+			<option value="plus"> + </option>
+			<option value="minus"> - </option>
+			<option value="multiply"> * </option>
+			<option value="divide"> / </option>
+			<option value="mod"> % </option>
+		</select>
+		<input id="right" type="number"/>
+		<button id="submit" onclick="calculate()">Try me</button>
+		<script type="text/javascript">
+
+			setInterval(function() {
+					alert('Please, use me...');
+					}, 30000);
+
+function calculate()
+{
+	var first = parseInt(document.getElementById("left").value),
+		second = parseInt(document.getElementById("right").value),
+		oper = document.getElementById("sel").value;
+
+	console.log(first);
+	console.log(second);
+
+	if (first < 0 || second < 0)
+		alert('Error :(');
+	else
+	{
+		try {
+	
+			var result = 0;
+			if (oper == 'plus')
+				result = first + second;
+			else if (oper == 'minus')
+				result = first - second;
+			else if (oper == 'multiply')
+				result = first * second;
+			else if (oper == 'divide')
+				result = first / second;
+			else if (oper == 'mod')
+				result = first % second;
+
+			if (result == 'Infinity' || (oper=="mod" && second == 0))
+				alert("It's over 9000!");
+			else if (result == NULL)
+				alert("Error :(");
+			else {
+				alert(result);
+				console.log(result);
+			}
+
+		} catch (err)
+		{
+			alert('Error :(');
+		}
+	}
+}
+</script>
+</body>
+</html>
+
+
